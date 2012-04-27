@@ -200,3 +200,6 @@ create sequence seq_milestone;
 --2012 04 20
 alter table ticket add release varchar(15);
 CREATE INDEX idx_ticket_release ON ticket USING btree (release);
+
+--2012 04 26
+alter table usuario add usa_gravatar boolean;

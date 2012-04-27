@@ -76,6 +76,9 @@
 					<form:input path="usuario.jabberUsername" size="40"/>
 					<p title="ex: andrefaria@chat.bluesoft.com.br">Jabber username</p>
 				</div>
+				<div>
+					Usa imagem do Gravatar: <form:checkbox path="usuario.usaImagemGravatar"/>					
+				</div>
 				<c:if test="${usuario.username ne null}">
 					<div>
 						<p><img alt="Gravatar" align="top" title="Gravatar - Globally Recognized Avatars" src="http://www.gravatar.com/avatar/${usuario.emailMd5}" /></p>

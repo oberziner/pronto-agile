@@ -60,6 +60,8 @@ class Usuario implements Comparable<Usuario>, Serializable {
 	
 	String jabberUsername
 	
+	Boolean usaImagemGravatar
+	
 	@ManyToOne
 	@JoinColumn(name = "CLIENTE_KEY")
 	Cliente cliente
